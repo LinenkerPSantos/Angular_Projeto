@@ -74,7 +74,7 @@ export class ChamadoService {
   }
 
   updateSla(chamadosla: ChamadoSla): Observable<ChamadoSla>{
-    const url = `${this.baseURLINC}/${chamadosla.id}`
+    const url = `${this.baseURLSLA}/${chamadosla.id}`
     return this.http.put<ChamadoSla>(url, chamadosla)   
   }
 
@@ -84,7 +84,7 @@ export class ChamadoService {
   }
 
   updateRitm(chamadoritm: ChamadoRitm): Observable<ChamadoRitm>{
-    const url = `${this.baseURLINC}/${chamadoritm.id}`
+    const url = `${this.baseURLRITM}/${chamadoritm.id}`
     return this.http.put<ChamadoRitm>(url, chamadoritm)   
   }
 
